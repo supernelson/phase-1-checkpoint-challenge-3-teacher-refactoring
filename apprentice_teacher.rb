@@ -1,12 +1,10 @@
-class ApprenticeTeacher
-  attr_reader :age, :salary, :phase, :target_raise
-  attr_accessor :name
+require_relative 'faculty'
+
+class ApprenticeTeacher < Faculty
 
   def initialize(options={})
-    @age = options.fetch(:age, 0)
-    @name = options.fetch(:name, "")
+    super
     @target_raise = 800
-    @phase = 3
   end
 
   def offer_high_five

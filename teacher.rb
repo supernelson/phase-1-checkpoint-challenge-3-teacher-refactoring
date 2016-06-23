@@ -1,11 +1,12 @@
-class Teacher
-  attr_reader :age, :salary, :phase, :performance_rating, :target_raise
-  attr_accessor :name
+require_relative 'faculty'
+
+class Teacher < Faculty
+
+  # SEBA why doesn't this need super?
+  attr_reader :performance_rating
 
   def initialize(options={})
-    @phase = 3
-    @age = options.fetch(:age, 0)
-    @name = options.fetch(:name, "")
+    super
     @target_raise = 1000
   end
 
