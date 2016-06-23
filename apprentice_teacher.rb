@@ -8,7 +8,8 @@ class ApprenticeTeacher < Faculty
   include HighFive
 
   def teach_stuff
-    response = "Listen, class, this is how everything works. *drops crazy knowledge bomb* ... You're welcome."
+    # SEBA how to do this in even more detail?
+    super + ". *drops crazy knowledge bomb* ... You're welcome."
   end
 
   def attend_training_session
