@@ -1,4 +1,5 @@
 require_relative 'faculty'
+require_relative 'high_five'
 
 class Teacher < Faculty
 
@@ -10,14 +11,7 @@ class Teacher < Faculty
     @target_raise = 1000
   end
 
-  def offer_high_five
-    "High five!"
-  end
-
-  def set_phase(num)
-    @phase = num
-    "Cool, I've always wanted to teach phase #{num}!"
-  end
+  include High_Five
 
   def teach_stuff
     response = ""
