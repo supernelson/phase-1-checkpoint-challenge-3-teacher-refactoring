@@ -4,14 +4,14 @@ class Student
   attr_reader :age, :phase
   attr_accessor :name
 
+
   def initialize(options = {})
     @phase = 1
     @age = options.fetch(:age, 0)
     @name = options.fetch(:name, "")
   end
 
-  include High_Five
-
+  include HighFive
 
   def set_phase(num)
     response = ""

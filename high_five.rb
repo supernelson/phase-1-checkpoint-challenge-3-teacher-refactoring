@@ -1,4 +1,4 @@
-module High_Five
+module HighFive
   def offer_high_five
     "High five!"
   end
