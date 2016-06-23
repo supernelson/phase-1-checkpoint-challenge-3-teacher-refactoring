@@ -10,13 +10,8 @@ class Teacher < Faculty
   include HighFive
 
   def teach_stuff
-    super
-    response = ""
-    response += "Listen, class, this is how everything works, fo SHO! "
-    response += "*drops flat-out insane knowledge bomb* "
-    response += "... You're welcome. *saunters away*"
-     # "...  *saunters away*"
-    response
+    response = "Listen, class, this is how everything works, fo SHO! *drops flat-out insane knowledge bomb* ... You're welcome. *saunters away*"
+    super + ", fo SHO! " +
   end
 
 end

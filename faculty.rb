@@ -1,13 +1,12 @@
 require_relative 'entire_school'
 
 class Faculty < EntireSchool
-  attr_reader :age, :salary, :phase, :target_raise
-  attr_accessor :name
+  attr_reader :salary, :target_raise
+  # attr_accessor :name
 
   def initialize(options={})
+    super
     @phase = 3
-    @age = options.fetch(:age, 0)
-    @name = options.fetch(:name, "")
     # SEBA self vs. self.class
     @target_raise = self.class::TARGET_RAISE
   end
@@ -37,11 +36,4 @@ class Faculty < EntireSchool
     response
   end
 
-  def teach_stuff
-    response = ""
-    response += "Listen, class, this is how everything works, fo SHO! "
-    response += "*drops flat-out insane knowledge bomb* "
-    response += "... You're welcome."
-    response
-  end
 end

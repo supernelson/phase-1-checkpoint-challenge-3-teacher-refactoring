@@ -8,12 +8,7 @@ class ApprenticeTeacher < Faculty
   include HighFive
 
   def teach_stuff
-    super
-    response = ""
-    response += "Listen, class, this is how everything works. "
-    response += "*drops crazy knowledge bomb* "
-    response  += "... You're welcome."
-    response
+    response = "Listen, class, this is how everything works. *drops crazy knowledge bomb* ... You're welcome."
   end
 
   def attend_training_session
